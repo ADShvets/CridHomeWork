@@ -14,6 +14,8 @@ Prepare Selenium Grid (Usage in Windows 10):
 #####  http://localhost:4444/grid/console
 3. Open Command Prompt with the project path and use the following command:
 #####  java -Dwebdriver.chrome.driver="chromedriver.exe" -Dwebdriver.gecko.driver="geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json
+4. Open window of first console and copy IP as shown in the picture 'IP.jpeg'
+5. Go to package tests and open class TestIframe and replace IP in line 27 as shown in the picture 'IPClass.jpeg'
 
 
 Running tests in Intellij Idea:

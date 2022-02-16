@@ -24,7 +24,7 @@ public class TestIframe extends BaseTest {
     @Parameters(value = {"browser"})
     public void setUp(@Optional("chrome") String browser) throws MalformedURLException {
 
-        driver.set(new RemoteWebDriver(new URL("http://192.168.43.39:4444/wd/hub"), capabilityFactory.getCapabilities(browser)));
+        driver.set(new RemoteWebDriver(new URL("http://192.168.0.102:4444/wd/hub"), capabilityFactory.getCapabilities(browser)));
         getDriver().manage().window().maximize();
         getDriver().get(W3SCHOOLS_URL);
     }
